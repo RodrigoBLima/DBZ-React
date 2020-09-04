@@ -16,12 +16,15 @@ export default createGlobalStyle`
   }
   :root {
     --color-header: #283e4a;
-    --color-linkedin: #0077b5;
+    --color-base: #0077b5;
     --color-input: #e1e9ee;
     --color-icons: #c7d1d8;
+    --color-footer: #7a8b98;
     --color-hashtag: #7a8b98;
     --color-background: #f5f5f5;
     --color-ad-text: #434649;
+    --color-border: #ddd;
+
     --color-panel: #fff;
     --color-link: #0073b1;
     --color-black: rgba(0,0,0,.9);
