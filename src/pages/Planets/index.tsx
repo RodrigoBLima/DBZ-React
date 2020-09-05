@@ -1,12 +1,20 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Layout from "../../components/Layout";
+import PlanetsJson from "../../services/character.json";
+import CardPlanets from "../../components/CardPlanets";
 
 const Planets: React.FC = () => {
+  const allPlanets = PlanetsJson;
+
   return (
-    <Container>
-      <h1>Planets</h1>
-    </Container>
+    <Layout>
+      {  
+        allPlanets.map((item) => (
+          <CardPlanets key={item._id} planet={item} />
+        ))
+      }
+    </Layout>
   );
 };
 

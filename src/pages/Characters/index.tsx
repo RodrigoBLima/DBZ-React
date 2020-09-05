@@ -1,24 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React from "react";
 
-import { Container } from './styles';
-import Layout from '../../components/Layout';
-import api from '../../services/api';
+import Layout from "../../components/Layout";
+import charactersJson from "../../services/character.json";
+import CardCharacter from "../../components/CardCharacter";
 
 const Characters: React.FC = () => {
-  const [characters, setCharacters] = useState([])
-
-  useEffect(() => {
-      const response = api.get("character")
-
-      console.log("**** ",response," **** ")
-
-  }, [])
+  const allCharacters = charactersJson;
 
   return (
     <Layout>
-      <Container>
-
-      </Container>
+      {allCharacters.length > 0 ? (
+        allCharacters.map((item) => (
+          <CardCharacter key={item._id} character={item} />
+        ))
+      ) : (
+        <></>
+      )}
     </Layout>
   );
 };
