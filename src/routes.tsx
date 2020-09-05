@@ -13,8 +13,9 @@ export default function Routes() {
     <BrowserRouter>
       <Route path="/" exact component={Characters} />
       <Route path="/character/:id" component={Character} />
-      <Route path="/planets" component={Planets} />
       <Route path="/planets/:id" component={Planet} />
+      <Route path="/planets" exact component={Planets} />
+
     </BrowserRouter>
   );
 }

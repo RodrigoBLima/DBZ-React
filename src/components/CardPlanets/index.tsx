@@ -1,6 +1,15 @@
 import React from "react";
 
-import { Container } from "./styles";
+import {
+  Container,
+  Card,
+  Avatar,
+  Column,
+  Row,
+  Name,
+} from "./styles";
+import { Link } from "react-router-dom";
+
 
 interface Planets {
   residents?: any;
@@ -19,7 +28,18 @@ interface PlanetsProps {
 const CardPlanets: React.FC<PlanetsProps> = ({ planet }) => {
   return (
     <Container>
-      <h1>CardPlanets</h1>
+       <Row className="row">
+          <Column className="column">
+            <Card className="card">
+              <Avatar src={planet.image} />
+
+              <Name>Nome: {planet.name}</Name>
+
+              <Link to={`/planets/${planet._id}`}>Ver mais</Link>
+
+            </Card>
+          </Column>
+        </Row>
     </Container>
   );
 };

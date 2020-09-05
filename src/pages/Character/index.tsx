@@ -1,6 +1,6 @@
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
-import { Card, Avatar, Info, CardBody ,CardContainer} from "./styles";
+import { Card, Avatar, Info, CardBody, CardContainer } from "./styles";
 import charactersJson from "../../services/character.json";
 import Layout from "../../components/Layout";
 
@@ -17,25 +17,23 @@ function Character({ match }: RouteComponentProps<TParams>) {
 
   return (
     <Layout>
-      <>
-        {currentCharacter.map((item) => (
-          <CardContainer>
+      {currentCharacter.map((item) => (
+        <CardContainer>
           <Card>
             <CardBody>
               <Avatar src={item.image} />
               <Info>
-              <p>Nome: {item.name}</p>
-              <p>Planeta: {item.originPlanet}</p>
-              <p>Gênero: {item.gender}</p>
-              <p>Status: {item.status}</p>
-              <p>Série: {item.series}</p>
-              <p>Data de criação: {item.created}</p>
+                <p>Nome: {item.name}</p>
+                <p>Planeta: {item.originPlanet}</p>
+                <p>Gênero: {item.gender}</p>
+                <p>Status: {item.status}</p>
+                <p>Série: {item.series}</p>
+                <p>Data de criação: {item.created}</p>
               </Info>
             </CardBody>
           </Card>
-          </CardContainer>
-        ))}
-      </>
+        </CardContainer>
+      ))}
     </Layout>
   );
 }

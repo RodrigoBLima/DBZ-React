@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from "../../components/Layout";
-import PlanetsJson from "../../services/character.json";
+import PlanetsJson from "../../services/planets.json";
 import CardPlanets from "../../components/CardPlanets";
 
 const Planets: React.FC = () => {
