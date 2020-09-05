@@ -3,6 +3,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { Card, Avatar, Info, CardBody, CardContainer } from "./styles";
 import charactersJson from "../../services/character.json";
 import Layout from "../../components/Layout";
+import getFormatedDate from '../../utils/index'
 
 type TParams = {
   id: string;
@@ -14,11 +15,10 @@ function Character({ match }: RouteComponentProps<TParams>) {
   const currentCharacter = charactersJson.filter(
     (character) => character._id === id
   );
-
   return (
     <Layout>
       {currentCharacter.map((item) => (
-        <CardContainer>
+        <CardContainer key={item._id}>
           <Card>
             <CardBody>
               <Avatar src={item.image} />
@@ -28,7 +28,7 @@ function Character({ match }: RouteComponentProps<TParams>) {
                 <p>Gênero: {item.gender}</p>
                 <p>Status: {item.status}</p>
                 <p>Série: {item.series}</p>
-                <p>Data de criação: {item.created}</p>
+                <p>Data de criação: {getFormatedDate(item.created)}</p>
               </Info>
             </CardBody>
           </Card>

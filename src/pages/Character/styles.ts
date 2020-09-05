@@ -15,7 +15,7 @@ export const CardContainer = styled.text`
   justify-content: center;
   margin: 100px;
 `;
-export const CardBody = styled.text`
+export const CardBody = styled.div`
   padding: 10px;
 `;
 export const Avatar = styled.img`
@@ -25,7 +25,7 @@ export const Avatar = styled.img`
   border-radius: 50%;
 `;
 
-export const Info = styled.text`
+export const Info = styled.div`
   > p {
     font-size: 20px;
     color: var(--color-gray);

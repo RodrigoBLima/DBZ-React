@@ -4,6 +4,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { Card, Avatar, Info, CardBody, CardContainer } from "./styles";
 import planetsJson from "../../services/planets.json";
 import Layout from "../../components/Layout";
+import getFormatedDate from "../../utils/index";
 
 type TParams = {
   id: string;
@@ -17,7 +18,7 @@ function Planet({ match }: RouteComponentProps<TParams>) {
   return (
     <Layout>
       {currentPlanet.map((item) => (
-        <CardContainer>
+        <CardContainer key={item._id}>
           <Card>
             <CardBody>
               <Avatar src={item.image} />
@@ -26,10 +27,12 @@ function Planet({ match }: RouteComponentProps<TParams>) {
                 <p>Url: {item.url}</p>
 
                 {item.residents.map((name) => (
-                  <><p>Residentes: {name}</p></>
+                  <>
+                    <p>Residentes: {name}</p>
+                  </>
                 ))}
-          
-                <p>Data de criação: {item.created}</p>
+
+                <p>Data de criação: {getFormatedDate(item.created)}</p>
               </Info>
             </CardBody>
           </Card>

@@ -5,7 +5,7 @@ export const Card = styled.div`
   margin: 5px;
 `;
 
-export const CardContainer = styled.text`
+export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -15,7 +15,7 @@ export const CardContainer = styled.text`
   justify-content: center;
   margin: 100px;
 `;
-export const CardBody = styled.text`
+export const CardBody = styled.div`
   padding: 10px;
 `;
 export const Avatar = styled.img`
@@ -25,7 +25,7 @@ export const Avatar = styled.img`
   border-radius: 50%;
 `;
 
-export const Info = styled.text`
+export const Info = styled.div`
   > p {
     font-size: 20px;
     color: var(--color-gray);
