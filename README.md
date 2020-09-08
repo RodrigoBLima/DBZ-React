@@ -1,4 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+<!-- VARS -->
+[linkedin]: https://www.linkedin.com/in/rodrigo-barbosa-710b10180/,
+[license-badge]: https://img.shields.io/github/license/RodrigoBLima/DBZ-React?color=%238257E5
+[star-badge]: https://img.shields.io/github/stars/RodrigoBLima/DBZ-React?color=8257E5&logo=github
+[last-commit-badge]: https://img.shields.io/github/last-commit/RodrigoBLima/DBZ-React?color=%238257E5
+[codacy-badge]: https://app.codacy.com/project/badge/Grade/b2d32fa731984f3e9c3eaa814861c9db
+[license-url]: https://github.com/RodrigoBLima/DBZ-React/blob/master/LICENSE
+[issues-url]: https://github.com/RodrigoBLima/DBZ-React/issues/
+[node-url]: https://nodejs.org/en
+[yarn-url]: https://classic.yarnpkg.com/
+[npm-url]:  https://www.npmjs.com/
+[BADGE_LICENSE]: https://img.shields.io/github/license/RodrigoBLima/DBZ-React
+[BADGE_TYPESCRIPT]: https://badges.frapsoft.com/typescript/code/typescript.png?v=101
+[BADGE_WEB_REACT]: https://img.shields.io/badge/web-react-blue
+[BADGE_SERVER_NODEJS]: https://img.shields.io/badge/server-nodejs-important
+[BADGE_OPEN_SOURCE]: https://badges.frapsoft.com/os/v1/open-source.png?v=103
+[BADGE_NODE_VERSION]: https://img.shields.io/badge/node-12.18.0-green
+[BADGE_NPM_VERSION]: https://img.shields.io/badge/npm-6.14.4-red
+[BADGE_OPEN_ISSUES]: https://img.shields.io/github/issues/RodrigoBLima/DBZ-React?c
+
+
+<h1 align="center">
+Dragon Ball API with ReactJS
+</h1>
+
+> yarn is required
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-RodrigoBarbosa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/rodrigo-barbosa-710b10180/)][linkedin]
+![BADGE_LICENSE] ![BADGE_WEB_REACT] ![BADGE_SERVER_NODEJS] ![BADGE_OPEN_SOURCE] ![BADGE_NODE_VERSION]
+![Git Stars][star-badge]
+![Last Commit][last-commit-badge]
+![Codacy Quality][codacy-badge]
+
 
 ## Available Scripts
 
@@ -37,8 +72,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# License
+[MIT License](/LICENSE)
